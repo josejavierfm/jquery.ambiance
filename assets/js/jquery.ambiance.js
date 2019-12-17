@@ -1,6 +1,6 @@
 /*!
  * Modificado por José Javier Fernández Mendoza
- * Versin 1.0.2
+ * Versin 1.0.4
  * Original:
  * Ambiance - Notification Plugin for jQuery
  * Version 1.0.1
@@ -108,3 +108,13 @@ jQuery(document).on("click", ".ambiance-close", function () {
   jQuery(this).parent().remove();
   return false;
 });
+
+
+function javisoflotante(texto){
+  $.ambiance({
+    message: texto,
+    type: "default",
+    fade: true
+    
+    });
+}
